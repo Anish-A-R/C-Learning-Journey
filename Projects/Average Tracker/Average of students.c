@@ -25,9 +25,9 @@ int main()
         }
         avg=sum/num;
         printf("The average of the students is:  %.2f\n",avg);
-        printf("Do you want to continue: (1 for yes and 0 for no)");
+        printf("Do you want to continue(1 for yes and 0 for no): ");
         scanf("%d",&choice);
     }
-    printf("Thanks For Using the Average Tracker");
+    printf("Thanks For Using the Average Tracker.");
     
 }

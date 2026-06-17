@@ -82,7 +82,8 @@ Enter the score of 1 student: 80
 Enter the score of 2 student: 90
 Enter the score of 3 student: 70
 The average of the students is:  80.00
-Do you want to continue: (1 for yes and 0 for no)1
+Do you want to continue(1 for yes and 0 for no): 0
+Thanks For Using the Average Tracker.
 ```
 
 ---
