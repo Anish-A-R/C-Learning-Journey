@@ -41,22 +41,24 @@ The program follows these steps:
 
 ---
 
-## Important Note About the Average Calculation
-The program currently uses:
+## How the Average Is Calculated
+The program uses floating-point values so the average can be shown correctly with decimals.
+
+The code stores the scores in a float array and calculates the average using:
 
 ```c
 avg = sum / num;
 ```
 
-Since both `sum` and `num` are integers, the result is also an integer division. This means the average may not show decimal values correctly.
+Since `sum` and `avg` are declared as float values, the output can be shown with proper decimal precision.
 
-A better version would use:
+The result is printed using:
 
 ```c
-avg = (float)sum / num;
+printf("The average of the students is:  %.2f\n", avg);
 ```
 
-This ensures the answer is displayed as a decimal value.
+This displays the average with two decimal places.
 
 ---
 
@@ -79,7 +81,7 @@ Enter how much people are there: 3
 Enter the score of 1 student: 80
 Enter the score of 2 student: 90
 Enter the score of 3 student: 70
-The average of the students is: 80.000000
+The average of the students is:  80.00
 Do you want to continue: (1 for yes and 0 for no)1
 ```
 

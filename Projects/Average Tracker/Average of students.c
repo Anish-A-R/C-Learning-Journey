@@ -14,17 +14,17 @@ int main()
             printf("The number of students less than one\n");
             continue;
         }
-        int score[num],i,sum;
+        int i;
+        float score[num],avg,sum;
         sum=0;
-        float avg;
         for(i=1;i<=num;i++)
         {
             printf("Enter the score of %d student:  ",i);
-            scanf("%d",&score[i-1]);
+            scanf("%f",&score[i-1]);
             sum+=score[i-1];
         }
         avg=sum/num;
-        printf("The average of the students is:  %f\n",avg);
+        printf("The average of the students is:  %.2f\n",avg);
         printf("Do you want to continue: (1 for yes and 0 for no)");
         scanf("%d",&choice);
     }
